@@ -1,0 +1,52 @@
+.bg-header {
+    background-color: #ff69b4;
+    color: white;
+    
+}
+
+.bg-footer {
+    background-color: #ff69b4;
+    color: white;
+}
+
+.sidebar {
+    border-right: 2px solid #dcbbcd; 
+}
+
+.logo {
+    width: 100px; 
+    height: 100px;
+}
+
+.box {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.Lisa {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+  }
+
+.center-content {
+    text-align: center; 
+}
+.logo {
+    max-width: 100%; 
+    height: auto; 
+}
+.box {
+    border: 1px solid #ccc; 
+    padding: 15px; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+}
+
+.logo-header {
+    border-radius: 50%; 
+    border: 2px solid #fff; 
+    overflow: hidden; 
+}
+

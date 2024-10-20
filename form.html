@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idola Saya - Formulir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/styles.css" />
+    <link rel="icon" href="asset/gambar/pinkk.png" />
+    <script>
+        // Fungsi untuk menampilkan pop-up setelah formulir disubmit
+        function showAlert() {
+            alert("Data berhasil dikirim!");
+            return true; // Memungkinkan pengiriman formulir
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-header text-center py-2">
+        <img src="asset/gambar/pinkk.png" alt="Logo" class="logo-header mb-2" style="width: 100px; height: 100px;">
+        <h1>Idola Saya</h1>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-lg-3 col-md-4 bg-light sidebar p-3">
+                <nav>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link active">Formulir</a></li>
+                        <li class="nav-item"><a href="table.html" class="nav-link">Tabel Data</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Konten Utama -->
+            <main class="col-lg-9 col-md-8 py-4">
+                <h2 class="text-center">Formulir</h2>
+                <form action="table.html" method="GET" onsubmit="return showAlert()">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="birthdate" class="form-label">Tanggal Lahir</label>
+                        <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Pesan</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Idola Favorit</label>
+                        <select class="form-select" name="favorite_idol" required>
+                            <option value="" disabled selected>Pilih idola favorit</option>
+                            <option value="Lalisa Manoban">Lalisa Manoban</option>
+                            <option value="Jennie Kim">Jennie Kim</option>
+                            <option value="Rosé Park">Rosé Park</option>
+                            <option value="Kim Jisoo">Kim Jisoo</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="fan" name="fan" value="Yes">
+                            <label class="form-check-label" for="fan">Ya, saya penggemar berat!</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </form>                
+                </form>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-center py-2">
+        <p>&copy; Marsella Yesi Natalia Sinaga 💖</p>
+    </footer>
+
+</body>
+</html>
